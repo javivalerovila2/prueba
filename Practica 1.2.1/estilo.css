@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+body {background-color: rgb(188, 234, 255)}
+
+h1 {color: rgb(42, 165, 52);font-family: Arial, Helvetica, sans-serif;font-size:xx-small;}
+
+p {color: rgb(224, 165, 122);font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;font-size: smaller;}
+
+li {color: rgb(15, 77, 0);font-family:fantasy;font-size:large;}
+

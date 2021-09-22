@@ -1,0 +1,170 @@
+@charset "utf-8";
+/* CSS Document */
+body, html {
+	height: 100%;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+
+}
+
+section {
+	display:grid;
+	margin-bottom:0.1em;
+}
+
+main {
+	display:grid;
+	grid-gap: 1rem;
+	padding:1rem;
+}
+
+h2 {
+text-align: center;
+}
+
+/* NAV */
+nav {
+	margin-bottom:0.1em;
+	font-family: 'Lato', sans-serif;
+
+}
+nav ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	display:flex;
+}
+nav li { flex-grow: 1; }
+nav a {
+	display: block;
+	padding: 1em;
+	text-align: center;
+	text-decoration: none;
+	color: #000000;
+	border: solid 1px #424242;
+	transition: all 0.5s;
+	text-transform: uppercase;
+}
+nav a:hover {
+	background-color:#f3868f; }
+
+
+
+.bloque {
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+    padding: 10px;
+
+  }
+
+.column h2 {
+    font-size:smaller;
+}
+
+
+.bloque .column img {
+	width:100%;
+	height:auto;
+}
+
+.bloque .column video{
+	width:100%;
+	height:auto;
+}
+
+
+
+.card {
+}
+.card h2 {
+    font-size: smaller;
+}
+
+.card img {
+	width:100%;
+	height:4cm;
+	transition:all 1s;
+}
+.card img:hover {
+	filter:invert(100%);
+}
+.container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+.responsive-iframe {
+position: absolute;
+top: 5%;
+left:5%;
+bottom: 0;
+width: 90%;
+height: 90%;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+
+
+
+@media (orientation: landscape) {
+
+
+    #main {
+        grid-template-columns: 1fr ;
+        grid-template-rows: auto auto ;
+    }
+    nav ul {
+        flex-direction: row;
+    }
+    a {
+        margin-right:0.2em;
+    }
+
+.bloque {
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+}
+.card {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+    }
+
+
+@media (orientation: portrait) {
+
+
+    section {
+        grid-template-columns: 1fr ;
+        grid-template-rows: auto auto ;
+    }
+
+
+    nav ul {
+        flex-direction: column;
+    }
+    nav a {
+        margin-bottom:0.2em;
+}
+.bloque {
+    grid-template-columns:  1fr;
+    grid-template-rows: auto auto;
+}
+
+}
+
